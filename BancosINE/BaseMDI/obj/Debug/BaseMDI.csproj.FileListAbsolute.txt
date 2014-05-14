@@ -1,0 +1,11 @@
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\bin\Debug\BaseMDI.exe.config
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\bin\Debug\BaseMDI.exe
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\bin\Debug\BaseMDI.pdb
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.csprojResolveAssemblyReference.cache
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.MDI.resources
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.Properties.Resources.resources
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.csproj.GenerateResource.Cache
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.exe
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.pdb
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.MenuLeft.resources
+c:\users\guicho\documents\visual studio 2013\Projects\BaseMDI\BaseMDI\obj\Debug\BaseMDI.BaseForm.resources
