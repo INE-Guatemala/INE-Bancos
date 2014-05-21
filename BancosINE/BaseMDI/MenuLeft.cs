@@ -18,6 +18,7 @@ namespace BancosINE
         public MenuLeft()
         {
             InitializeComponent();
+            treeView1.ExpandAll();
         }
 
         public void sendMDI(MDI m){
@@ -38,7 +39,7 @@ namespace BancosINE
                 int r = tn.Parent.Index;
                 int i = tn.Index;
                 string[] o = (string[])Funciones.clases[r];
-                string clase ="BaseMDI."+ o[i];                
+                string clase = o[i];                
                 Type t = Type.GetType(clase);                
                 if (t != null)
                 {
@@ -49,11 +50,13 @@ namespace BancosINE
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
+            /*
             if (treeView1.SelectedNode.Level == 0)
             {
                 if (treeView1.SelectedNode.IsExpanded) treeView1.SelectedNode.Collapse();
                 else treeView1.SelectedNode.Expand();
             }
+             * */
         }
     }
 }

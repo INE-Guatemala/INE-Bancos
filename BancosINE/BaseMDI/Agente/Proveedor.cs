@@ -10,27 +10,32 @@ using System.Windows.Forms;
 
 namespace BancosINE
 {
-    public partial class tipoagente : BaseForm
+    public partial class Proveedor : BaseForm
     {
 
-        private DataGridView dataGrid;
+        private DataGridView dGrid;
+        private int selectRow = -1;
+        private int selectIndex = -1;
         private Boolean isNew = true;
-        private int selectIndex = -1, selectRow = -1;
+        private int tipoAgente = 2;
 
-        public tipoagente()
+        public Proveedor()
         {
             InitializeComponent();
-            this.Name = "Tipos de agente";         
+            this.Name = "Proveedor";
             addTitle(this.Name);
-            dataGrid = customGridView1.dGrid;
+            dGrid = customGridView1.dGrid;
             Consultar();
         }
 
-        private void Consultar(){
-            dataGrid.DataSource = Funciones.dbConnect.consulta_DataGridView("select * from tipo_agente");
-            dataGrid.Columns[0].Visible = false;
+        private void Consultar()
+        {
+            string query = "select idagente, nombre as 'Nombre', direccion as 'Dirección',telefono as 'Teléfono', nit as 'Nit' from agente where idtipo_agente=2";
+            DataTable dt = Funciones.dbConnect.consulta_DataGridView(query);
+            dGrid.DataSource = dt;
+            dGrid.Columns[0].Visible = false;
 
-            dataGrid.CellMouseDown += dataGridView1_CellMouseDown;
+            dGrid.CellMouseDown += dataGridView1_CellMouseDown;
             customGridView1.cms.ItemClicked += cms_Click;
         }
 
@@ -43,8 +48,10 @@ namespace BancosINE
                     {
                         isNew = false;
                         newRegistro_Click(sender, e);
-                        textBox1.Text = dataGrid[1, selectRow].Value.ToString();
-                        richTextBox1.Text = dataGrid[2, selectRow].Value.ToString();
+                        textBox1.Text = dGrid[1, selectRow].Value.ToString();
+                        textBox2.Text = dGrid[2, selectRow].Value.ToString();
+                        textBox3.Text = dGrid[3, selectRow].Value.ToString();
+                        textBox4.Text = dGrid[4, selectRow].Value.ToString();
                         break;
                     }
                 case "Eliminar":
@@ -60,8 +67,8 @@ namespace BancosINE
             DialogResult res = MessageBox.Show("¿Seguro que desea eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
-                string tabla = "tipo_agente";
-                string condicion = "idtipo_agente =" + selectIndex.ToString();
+                string tabla = "agente";
+                string condicion = "idagente =" + selectIndex.ToString();
                 Funciones.dbConnect.eliminar(tabla, condicion);
                 Consultar();
             }
@@ -72,9 +79,8 @@ namespace BancosINE
             if (e.Button == MouseButtons.Right)
             {
                 selectRow = e.RowIndex;
-                selectIndex = Convert.ToInt32(dataGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
+                selectIndex = Convert.ToInt32(dGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
                 customGridView1.cms.Show(Cursor.Position);
-
             }
         }
 
@@ -82,34 +88,46 @@ namespace BancosINE
         {
             panel1.Visible = true;
             textBox1.Focus();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            isNew = true;
-            panel1.Visible = false;
-            textBox1.Text = "";
-            richTextBox1.Text = "";
+            newRegistro.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && richTextBox1.Text != "") { 
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
+            {
                 Dictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("nombre", textBox1.Text);
-                dict.Add("descripcion", richTextBox1.Text);
+                dict.Add("telefono", textBox2.Text);
+                dict.Add("direccion", textBox3.Text);
+                dict.Add("nit", textBox4.Text);
+                dict.Add("idtipo_agente", tipoAgente.ToString());
                 if (isNew)
                 {
-                    Funciones.dbConnect.insertar("tipo_agente", dict);
+                    Funciones.dbConnect.insertar("agente", dict);
                 }
                 else
                 {
-                    Funciones.dbConnect.actualizar("tipo_agente", dict, "idtipo_agente=" + selectIndex);
+                    Funciones.dbConnect.actualizar("agente", dict, "idagente =" + selectIndex.ToString());
                 }
-                
+                isNew = true;
                 button1_Click(sender, e);
                 Consultar();
             }
+            else
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            newRegistro.Visible = true;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            isNew = true;
         }
     }
 }

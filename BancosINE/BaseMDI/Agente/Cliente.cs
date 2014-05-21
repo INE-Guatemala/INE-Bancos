@@ -10,26 +10,28 @@ using System.Windows.Forms;
 
 namespace BancosINE
 {
-    public partial class Bancos : BaseForm
+    public partial class Cliente : BaseForm
     {
 
         private DataGridView dGrid;
         private int selectRow = -1;
         private int selectIndex = -1;
         private Boolean isNew = true;
+        private int tipoAgente = 1;
 
-        public Bancos()
+        public Cliente()
         {
             InitializeComponent();
-            this.Name = "Bancos";         
+            this.Name = "Cliente";
             addTitle(this.Name);
             dGrid = customGridView1.dGrid;
-            Consultar();            
+            Consultar(); 
         }
 
         private void Consultar()
         {
-            DataTable dt = Funciones.dbConnect.consulta_DataGridView("select * from banco");
+            string query = "select idagente, nombre as 'Nombre', direccion as 'Dirección',telefono as 'Teléfono', nit as 'Nit' from agente where idtipo_agente=1";
+            DataTable dt = Funciones.dbConnect.consulta_DataGridView(query);
             dGrid.DataSource = dt;
             dGrid.Columns[0].Visible = false;
 
@@ -40,7 +42,8 @@ namespace BancosINE
         private void cms_Click(object sender, ToolStripItemClickedEventArgs e)
         {
             string s = e.ClickedItem.ToString();
-            switch (s){
+            switch (s)
+            {
                 case "Editar":
                     {
                         isNew = false;
@@ -48,6 +51,7 @@ namespace BancosINE
                         textBox1.Text = dGrid[1, selectRow].Value.ToString();
                         textBox2.Text = dGrid[2, selectRow].Value.ToString();
                         textBox3.Text = dGrid[3, selectRow].Value.ToString();
+                        textBox4.Text = dGrid[4, selectRow].Value.ToString();
                         break;
                     }
                 case "Eliminar":
@@ -58,10 +62,16 @@ namespace BancosINE
             }
         }
 
-        public override void pressButton1()
+        private void Eliminar()
         {
-            base.pressButton1();
-            MessageBox.Show("Hola desde Override");
+            DialogResult res = MessageBox.Show("¿Seguro que desea eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                string tabla = "agente";
+                string condicion = "idagente =" + selectIndex.ToString();
+                Funciones.dbConnect.eliminar(tabla, condicion);
+                Consultar();
+            }
         }
 
         private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -71,11 +81,8 @@ namespace BancosINE
                 selectRow = e.RowIndex;
                 selectIndex = Convert.ToInt32(dGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
                 customGridView1.cms.Show(Cursor.Position);
-                
             }
         }
-
-       
 
         private void newRegistro_Click(object sender, EventArgs e)
         {
@@ -86,19 +93,21 @@ namespace BancosINE
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "") { 
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
+            {
                 Dictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("nombre", textBox1.Text);
                 dict.Add("telefono", textBox2.Text);
                 dict.Add("direccion", textBox3.Text);
-
+                dict.Add("nit", textBox4.Text);
+                dict.Add("idtipo_agente", tipoAgente.ToString());
                 if (isNew)
                 {
-                    Funciones.dbConnect.insertar("banco", dict);    
+                    Funciones.dbConnect.insertar("agente", dict);
                 }
                 else
                 {
-                    Funciones.dbConnect.actualizar("banco", dict, "idbanco ="+selectIndex.ToString());
+                    Funciones.dbConnect.actualizar("agente", dict, "idagente =" + selectIndex.ToString());
                 }
                 isNew = true;
                 button1_Click(sender, e);
@@ -117,18 +126,8 @@ namespace BancosINE
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
+            textBox4.Text = "";
             isNew = true;
-        }
-
-        private void Eliminar()
-        {
-            DialogResult res = MessageBox.Show("¿Seguro que desea eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
-            if (res == DialogResult.Yes) {
-                string tabla = "banco";
-                string condicion = "idbanco =" + selectIndex.ToString();
-                Funciones.dbConnect.eliminar(tabla,condicion );
-                Consultar();
-            }
         }
     }
 }

@@ -38,17 +38,17 @@ namespace BancosINE
             cuentaCmb.DisplayMember = "nombre";
             cuentaCmb.ValueMember = "idtipo_cuenta";           
 
-            monedaCmb.DataSource = Funciones.dbConnect.consulta_ComboBox("select idtipo_moneda, concat(nombre,' - ',descripcion) as nombre from tipo_moneda");
+            monedaCmb.DataSource = Funciones.dbConnect.consulta_ComboBox("select idmoneda, concat(nombre,' - ',descripcion) as nombre from moneda");
             monedaCmb.DisplayMember = "nombre";
-            monedaCmb.ValueMember = "idtipo_moneda";
+            monedaCmb.ValueMember = "idmoneda";
         }
 
         private void Consultar()
         {
             dataCuenta = customGridView1.dGrid;
 
-            string query = "select c.idcuenta as 'id',c.nombre as 'Nombre' ,c.numero as 'Número', t.nombre as 'Tipo de cuenta', m.nombre as 'Moneda', b.nombre as 'Banco', b.idbanco, t.idtipo_cuenta, m.idtipo_moneda ";
-            query += "from cuenta c, banco b, tipo_cuenta t, tipo_moneda m where c.idtipo_cuenta=t.idtipo_cuenta and c.idtipo_moneda=m.idtipo_moneda and c.idbanco=b.idbanco";
+            string query = "select c.idcuenta as 'id',c.nombre as 'Nombre' ,c.numero as 'Número', t.nombre as 'Tipo de cuenta', m.nombre as 'Moneda', b.nombre as 'Banco', b.idbanco, t.idtipo_cuenta, m.idmoneda ";
+            query += "from cuenta c, banco b, tipo_cuenta t, moneda m where c.idtipo_cuenta=t.idtipo_cuenta and c.idmoneda=m.idmoneda and c.idbanco=b.idbanco";
             dataCuenta.DataSource = Funciones.dbConnect.consulta_DataGridView(query);
             dataCuenta.Columns[0].Visible = false;
             dataCuenta.Columns[6].Visible = false;

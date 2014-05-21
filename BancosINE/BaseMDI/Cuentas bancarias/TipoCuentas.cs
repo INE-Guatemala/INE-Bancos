@@ -31,7 +31,7 @@ namespace BancosINE
         private void Consulta()
         {
             dataCuenta.DataSource = Funciones.dbConnect.consulta_DataGridView("select * from tipo_cuenta");
-            dataMoneda.DataSource = Funciones.dbConnect.consulta_DataGridView("select * from tipo_moneda");
+            dataMoneda.DataSource = Funciones.dbConnect.consulta_DataGridView("select * from moneda");
 
             dataCuenta.Columns[0].Visible = false;
             dataMoneda.Columns[0].Visible = false;
@@ -146,7 +146,7 @@ namespace BancosINE
         {
             if (MessageBox.Show("¿Seguro que desea eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Funciones.dbConnect.eliminar("tipo_moneda", "idtipo_moneda =" + selectMoneda.ToString());
+                Funciones.dbConnect.eliminar("moneda", "idmoneda =" + selectMoneda.ToString());
                 Consulta();
             }
         }
@@ -188,11 +188,11 @@ namespace BancosINE
 
                 if (isNewMoneda)
                 {
-                    Funciones.dbConnect.insertar("tipo_moneda", dict);
+                    Funciones.dbConnect.insertar("moneda", dict);
                 }
                 else
                 {
-                    Funciones.dbConnect.actualizar("tipo_moneda", dict, "idtipo_moneda =" + selectMoneda.ToString());
+                    Funciones.dbConnect.actualizar("moneda", dict, "idmoneda =" + selectMoneda.ToString());
                 }
                 isNewMoneda = true;
                 button5_Click(sender, e);
