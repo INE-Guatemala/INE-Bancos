@@ -1,4 +1,4 @@
-INE-Bancos!	{#welcome}
+INE-Bancos!
 =====================
 
 INE-Bancos es un software orientado a medianas empresas para que puedan llevar un control diario de sus movimientos bancarios, generar reportes mensuales, consultar saldos y realizar conciliaciones a las diferentes cuentas bancarias que tenga la empresa. Este software utiliza una interfaz amigable para el usuario y pueda realizar cualquier operación fácilmente.
