@@ -10,7 +10,7 @@ Requisitos del software
 
 > **NOTA:** Este software solo trabaja sobre el sistema operativo Windows:
 >
-> - Windows FrameWork 4.5, lo encontramos en [http://www.microsoft.com/es-es/download/details.aspx?id=30653][1],
+> - Windows Net FrameWork 4.5, lo encontramos en [http://www.microsoft.com/es-es/download/details.aspx?id=30653][1],
 > - MySql, descargandolo desde su página oficial [http://dev.mysql.com/downloads/installer/][1],
 > - Connector Odbc MySql, se puede descargar en el siguiente link [http://dev.mysql.com/downloads/connector/odbc/][1]
 
