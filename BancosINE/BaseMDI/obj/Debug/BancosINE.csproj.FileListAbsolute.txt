@@ -41,3 +41,4 @@ C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debu
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Agenda.resources

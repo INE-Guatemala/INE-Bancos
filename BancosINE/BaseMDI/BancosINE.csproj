@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agente\Acreedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,7 @@
     <Compile Include="CustomGridView.Designer.cs">
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ejecutarAgenda.cs" />
     <Compile Include="Funciones.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -134,6 +141,9 @@
     <Compile Include="Transacciones\Transaccion.Designer.cs">
       <DependentUpon>Transaccion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agente\Acreedor.resx">
       <DependentUpon>Acreedor.cs</DependentUpon>
     </EmbeddedResource>
