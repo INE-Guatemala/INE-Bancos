@@ -35,6 +35,9 @@ namespace BancosINE
                 "BancosINE.TipoCuentas",
                 "BancosINE.TipoCuentas",
                 "BancosINE.tipoagente"
+            },
+               new string[]{               
+                "BancosINE.Conciliacion"
             }
         };
     }

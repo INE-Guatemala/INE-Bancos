@@ -208,7 +208,8 @@
             this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.customGridView1);
             this.Name = "Cuentas";
-            this.Text = "Cuentas";
+            this.Text = "Conciliacion";
+            this.Load += new System.EventHandler(this.Cuentas_Load);
             this.Controls.SetChildIndex(this.customGridView1, 0);
             this.Controls.SetChildIndex(this.newRegistro, 0);
             this.Controls.SetChildIndex(this.panel1, 0);

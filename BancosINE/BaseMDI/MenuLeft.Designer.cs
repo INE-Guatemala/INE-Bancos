@@ -56,6 +56,9 @@
             treeNode13,
             treeNode14,
             treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Conciliacion Bancaria");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Reportes", new System.Windows.Forms.TreeNode[] {
+            treeNode17});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
@@ -99,11 +102,17 @@
             treeNode15.Text = "Tipos de agente";
             treeNode16.Name = "Nodo0";
             treeNode16.Text = "Tipos";
+            treeNode17.Name = "subMconciliacion";
+            treeNode17.Text = "Conciliacion Bancaria";
+            treeNode18.Name = "menuReporte";
+            treeNode18.Text = "Reportes";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
             treeNode7,
             treeNode11,
-            treeNode16});
+            treeNode16,
+            treeNode18
+            });
             this.treeView1.Size = new System.Drawing.Size(300, 600);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
