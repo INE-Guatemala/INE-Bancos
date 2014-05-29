@@ -28,7 +28,8 @@ namespace BancosINE
             new string[]{               
                 "BancosINE.Cliente",
                 "BancosINE.Proveedor",
-                "BancosINE.Acreedor"
+                "BancosINE.Acreedor",
+                "BancosINE.Cheques"
             },
             new string[]{
                 "BancosINE.Transacciones.Transaccion",

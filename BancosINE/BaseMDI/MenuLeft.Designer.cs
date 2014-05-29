@@ -43,19 +43,21 @@
             System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Clientes");
             System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Proveedores");
             System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Acreedores");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Agentes", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Cheques");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Agentes", new System.Windows.Forms.TreeNode[] {
             treeNode8,
             treeNode9,
-            treeNode10});
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Transacción");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Tipos de moneda");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Tipos de cuentas");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Tipos de agente");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Tipos", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Transacción");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Tipos de moneda");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Tipos de cuentas");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Tipos de agente");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Tipos", new System.Windows.Forms.TreeNode[] {
             treeNode13,
             treeNode14,
-            treeNode15});
+            treeNode15,
+            treeNode16});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
@@ -65,6 +67,7 @@
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(132)))), ((int)(((byte)(135)))));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(2);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Nodo6";
             treeNode1.Text = "Bancos";
@@ -88,34 +91,37 @@
             treeNode10.Name = "Nodo4";
             treeNode10.Text = "Acreedores";
             treeNode11.Name = "Nodo0";
-            treeNode11.Text = "Agentes";
-            treeNode12.Name = "Nodo1";
-            treeNode12.Text = "Transacción";
-            treeNode13.Name = "Nodo8";
-            treeNode13.Text = "Tipos de moneda";
-            treeNode14.Name = "Nodo7";
-            treeNode14.Text = "Tipos de cuentas";
-            treeNode15.Name = "Nodo1";
-            treeNode15.Text = "Tipos de agente";
-            treeNode16.Name = "Nodo0";
-            treeNode16.Text = "Tipos";
+            treeNode11.Text = "Cheques";
+            treeNode12.Name = "Nodo0";
+            treeNode12.Text = "Agentes";
+            treeNode13.Name = "Nodo1";
+            treeNode13.Text = "Transacción";
+            treeNode14.Name = "Nodo8";
+            treeNode14.Text = "Tipos de moneda";
+            treeNode15.Name = "Nodo7";
+            treeNode15.Text = "Tipos de cuentas";
+            treeNode16.Name = "Nodo1";
+            treeNode16.Text = "Tipos de agente";
+            treeNode17.Name = "Nodo0";
+            treeNode17.Text = "Tipos";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
             treeNode7,
-            treeNode11,
-            treeNode16});
-            this.treeView1.Size = new System.Drawing.Size(300, 600);
+            treeNode12,
+            treeNode17});
+            this.treeView1.Size = new System.Drawing.Size(226, 488);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
             // MenuLeft
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.treeView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuLeft";
-            this.Size = new System.Drawing.Size(301, 768);
+            this.Size = new System.Drawing.Size(226, 624);
             this.Resize += new System.EventHandler(this.MenuLeft_Resize);
             this.ResumeLayout(false);
 
