@@ -24,7 +24,10 @@ namespace BancosINE
                 "BancosINE.Bancos",                
                 "BancosINE.Cuentas"
             },
-            new string[]{},
+            new string[]{
+                "",
+                "BancosINE.Estados"
+            },
             new string[]{               
                 "BancosINE.Cliente",
                 "BancosINE.Proveedor",
