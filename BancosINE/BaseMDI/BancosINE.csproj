@@ -32,14 +32,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="numerosaletrascanel">
-      <HintPath>..\..\..\..\..\Visual Studio 2013\Projects\numerosaletrascanel\numerosaletrascanel\bin\Debug\numerosaletrascanel.dll</HintPath>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="numerosaletrascanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\canel\Documents\Visual Studio 2013\Projects\numerosaletrascanel\numerosaletrascanel\bin\Debug\numerosaletrascanel.dll</HintPath>
     </Reference>
-    <Reference Include="ODBCConnect">
-      <HintPath>..\..\..\..\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\ODBCConnect.dll</HintPath>
+    <Reference Include="ODBCConnect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Desktop\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,11 +77,35 @@
     <Compile Include="Agente\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cheques.cs">
+    <Compile Include="Cheque\Cheques.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cheques.Designer.cs">
+    <Compile Include="Cheque\Cheques.Designer.cs">
       <DependentUpon>Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque\formcheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque\formcheque.Designer.cs">
+      <DependentUpon>formcheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque\mario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cheque\prueba.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cheque\rptcheque.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptcheque.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Cuentas bancarias\Bancos.cs">
       <SubType>Form</SubType>
@@ -155,8 +188,23 @@
     <EmbeddedResource Include="Agente\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cheques.resx">
+    <EmbeddedResource Include="Cheque\Cheques.resx">
       <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\formcheque.resx">
+      <DependentUpon>formcheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\mario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\prueba.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>prueba.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\rptcheque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcheque.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas bancarias\Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
@@ -243,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_nube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

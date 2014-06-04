@@ -92,28 +92,106 @@ D:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\Banco
 D:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 D:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
 D:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.pdb
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\ODBCConnect.pdb
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
-F:\Desarrollo INE\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+D:\Desarrollo INE - copia\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+D:\Desarrollo INE - copia\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+D:\Desarrollo INE - copia\2da actualizacion\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+F:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+F:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.dll
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.pdb
+D:\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\ODBCConnect.pdb
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+D:\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.dll
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.pdb
+C:\Users\canel\Desktop\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheque.formcheque.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.dll
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.pdb
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheque.formcheque.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+C:\Users\canel\Documents\umg 2014\real\INE-Bancos\BancosINE\BaseMDI\bin\Debug\ODBCConnect.dll
