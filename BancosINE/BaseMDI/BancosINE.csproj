@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ODBCConnect">
+    <Reference Include="ODBCConnect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -90,6 +92,14 @@
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </Compile>
     <Compile Include="ejecutarAgenda.cs" />
+    <Compile Include="Cuentas bancarias\Estados.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cuentas bancarias\Estados.designer.cs">
+      <DependentUpon>Estados.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Funciones.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -168,6 +178,10 @@
     <EmbeddedResource Include="CustomGridView.resx">
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas bancarias\Estados.resx">
+      <DependentUpon>Estados.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_nube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
