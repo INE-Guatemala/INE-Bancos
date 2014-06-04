@@ -41,18 +41,17 @@ C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debu
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
-C:\Users\mario pc\Documents\GitHub\INE-Bancos\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
-C:\Users\mario pc\Documents\GitHub\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
-C:\Users\mario pc\Documents\GitHub\INE-Bancos\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
-<<<<<<< HEAD
-=======
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Agenda.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Estados.resources
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.resx
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.cs
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.designer.cs
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
-C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
-C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\bin\Debug\ODBCConnect.pdb
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Agenda.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
@@ -61,6 +60,7 @@ C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Estados.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
@@ -69,5 +69,9 @@ C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resou
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
 C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
-C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Estados.resources
->>>>>>> nueva
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_cuentas.resources
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\RdlCompile.cache
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\RdlCompile.compiled
+C:\Users\mario pc\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_de_movimiento.resources

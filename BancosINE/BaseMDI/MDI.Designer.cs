@@ -180,10 +180,11 @@
             // 
             this.menuLeft1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.menuLeft1.Location = new System.Drawing.Point(0, 29);
-            this.menuLeft1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuLeft1.Margin = new System.Windows.Forms.Padding(2);
             this.menuLeft1.Name = "menuLeft1";
             this.menuLeft1.Size = new System.Drawing.Size(225, 488);
             this.menuLeft1.TabIndex = 0;
+            this.menuLeft1.Load += new System.EventHandler(this.menuLeft1_Load);
             // 
             // MDI
             // 

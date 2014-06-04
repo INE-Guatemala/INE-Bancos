@@ -129,5 +129,10 @@ namespace BancosINE
             textBox4.Text = "";
             isNew = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Reporte_Clientes().ShowDialog();
+        }
     }
 }
