@@ -164,6 +164,7 @@
             this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.customGridView1);
             this.Name = "Bancos";
+            this.Load += new System.EventHandler(this.Bancos_Load);
             this.Controls.SetChildIndex(this.customGridView1, 0);
             this.Controls.SetChildIndex(this.newRegistro, 0);
             this.Controls.SetChildIndex(this.panel1, 0);

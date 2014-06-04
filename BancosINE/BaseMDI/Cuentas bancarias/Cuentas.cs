@@ -47,7 +47,7 @@ namespace BancosINE
         {
             dataCuenta = customGridView1.dGrid;
 
-            string query = "select c.idcuenta as 'id',c.nombre as 'Nombre' ,c.numero as 'Número', t.nombre as 'Tipo de cuenta', m.nombre as 'Moneda', b.nombre as 'Banco', b.idbanco, t.idtipo_cuenta, m.idmoneda, c.saldo as 'Saldo' ";
+            string query = "select c.idcuenta as 'id',c.nombre as 'Nombre' ,c.numero as 'Número', t.nombre as 'Tipo de cuenta', m.nombre as 'Moneda', b.nombre as 'Banco', b.idbanco, t.idtipo_cuenta, m.idmoneda ";
             query += "from cuenta c, banco b, tipo_cuenta t, moneda m where c.idtipo_cuenta=t.idtipo_cuenta and c.idmoneda=m.idmoneda and c.idbanco=b.idbanco";
             dataCuenta.DataSource = Funciones.dbConnect.consulta_DataGridView(query);
             dataCuenta.Columns[0].Visible = false;
@@ -70,7 +70,6 @@ namespace BancosINE
                         newRegistro_Click(sender, e);
                         nombreTxt.Text = dataCuenta[1, selectRow].Value.ToString();
                         numeroTxt.Text = dataCuenta[2, selectRow].Value.ToString();
-                        saldoTxb.Text = dataCuenta[9, selectRow].Value.ToString();
                         bancoCmb.SelectedValue = Convert.ToInt32(dataCuenta[6, selectRow].Value.ToString());
                         cuentaCmb.SelectedValue = Convert.ToInt32(dataCuenta[7, selectRow].Value.ToString());
                         monedaCmb.SelectedValue = Convert.ToInt32(dataCuenta[8, selectRow].Value.ToString());
@@ -104,7 +103,6 @@ namespace BancosINE
         {
             nombreTxt.Text = "";
             numeroTxt.Text = "";
-            saldoTxb.Text = "";
             panel1.Visible = false;
         }
 
@@ -115,7 +113,6 @@ namespace BancosINE
                 Dictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("nombre", nombreTxt.Text);
                 dict.Add("numero", numeroTxt.Text);
-                dict.Add("saldo", saldoTxb.Text);
                 dict.Add("idbanco", bancoCmb.SelectedValue.ToString());
                 dict.Add("idtipo_cuenta", cuentaCmb.SelectedValue.ToString());
                 dict.Add("idmoneda", monedaCmb.SelectedValue.ToString());

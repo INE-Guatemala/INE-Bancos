@@ -53,6 +53,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BaseForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

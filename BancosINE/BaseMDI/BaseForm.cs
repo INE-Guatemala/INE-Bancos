@@ -33,5 +33,10 @@ namespace BancosINE
             label1.Text = n;
         }
 
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

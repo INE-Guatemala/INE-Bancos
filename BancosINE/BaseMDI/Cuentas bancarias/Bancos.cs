@@ -130,5 +130,10 @@ namespace BancosINE
                 Consultar();
             }
         }
+
+        private void Bancos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

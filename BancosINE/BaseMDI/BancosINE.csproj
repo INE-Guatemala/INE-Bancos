@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Agenda.Designer.cs">
-      <DependentUpon>Agenda.cs</DependentUpon>
-    </Compile>
     <Compile Include="Agente\Acreedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,7 +83,31 @@
     <Compile Include="CustomGridView.Designer.cs">
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </Compile>
-    <Compile Include="ejecutarAgenda.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Funciones.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -114,6 +132,12 @@
     </Compile>
     <Compile Include="MenuUp.Designer.cs">
       <DependentUpon>MenuUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\Movimientos bancarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\Movimientos bancarios.Designer.cs">
+      <DependentUpon>Movimientos bancarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,9 +165,6 @@
     <Compile Include="Transacciones\Transaccion.Designer.cs">
       <DependentUpon>Transaccion.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Agenda.resx">
-      <DependentUpon>Agenda.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Agente\Acreedor.resx">
       <DependentUpon>Acreedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +201,9 @@
     <EmbeddedResource Include="MenuUp.resx">
       <DependentUpon>MenuUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\Movimientos bancarios.resx">
+      <DependentUpon>Movimientos bancarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -196,6 +220,84 @@
     <EmbeddedResource Include="Transacciones\Transaccion.resx">
       <DependentUpon>Transaccion.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsc">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet5.xss">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Acreedor.datasource" />
+    <None Include="Properties\DataSources\Bancos.datasource" />
+    <None Include="Properties\DataSources\BancosINE.Movimientos.Movimientos_bancarios.datasource" />
+    <None Include="Properties\DataSources\BancosINE.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\BancosINE.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\BancosINE.Transacciones.Transaccion.datasource" />
+    <None Include="Properties\DataSources\BaseForm.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\Cuentas.datasource" />
+    <None Include="Properties\DataSources\CustomGridView.datasource" />
+    <None Include="Properties\DataSources\DataSet1.datasource" />
+    <None Include="Properties\DataSources\DataSet2.datasource" />
+    <None Include="Properties\DataSources\DataSet3.datasource" />
+    <None Include="Properties\DataSources\Funciones.datasource" />
+    <None Include="Properties\DataSources\login.datasource" />
+    <None Include="Properties\DataSources\MDI.datasource" />
+    <None Include="Properties\DataSources\MenuLeft.datasource" />
+    <None Include="Properties\DataSources\MenuUp.datasource" />
+    <None Include="Properties\DataSources\ODBCConnect.DBConnect.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Proveedor.datasource" />
+    <None Include="Properties\DataSources\tipoagente.datasource" />
+    <None Include="Properties\DataSources\TipoCuentas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

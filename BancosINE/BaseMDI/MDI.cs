@@ -28,8 +28,7 @@ namespace BancosINE
             int w = Screen.FromControl(this).WorkingArea.Width;
             int h = Screen.FromControl(this).WorkingArea.Height;
             ReDimensionar(w, h);
-            new ejecutarAgenda();
-            openForm(new Agenda());
+            //openForm(new tipoagente());
         }
 
         private void ReDimensionar(int w, int h)

@@ -136,5 +136,10 @@ namespace BancosINE.Transacciones
                 Consultar();
             }
         }
+
+        private void Transaccion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

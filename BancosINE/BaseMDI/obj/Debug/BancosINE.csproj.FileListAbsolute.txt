@@ -41,4 +41,27 @@ C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debu
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
-C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Agenda.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe.config
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\ODBCConnect.pdb
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.BaseForm.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Bancos.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Cuentas.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.TipoCuentas.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.CustomGridView.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.login.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.MDI.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuLeft.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.MenuUp.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Properties.Resources.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Movimientos.Movimientos_bancarios.resources

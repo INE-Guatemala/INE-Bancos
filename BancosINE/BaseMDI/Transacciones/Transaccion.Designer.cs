@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -38,9 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.newRegistro = new System.Windows.Forms.Button();
             this.customGridView1 = new BancosINE.CustomGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,32 @@
             this.panel1.Size = new System.Drawing.Size(907, 285);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(168, 116);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(549, 153);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = "";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(168, 86);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(549, 24);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 18);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Tipo de transacción:";
             // 
             // button2
             // 
@@ -151,32 +177,6 @@
             this.customGridView1.Size = new System.Drawing.Size(907, 367);
             this.customGridView1.TabIndex = 5;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 18);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Tipo de transacción:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 86);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(549, 24);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(168, 116);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(549, 153);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
-            // 
             // Transaccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -187,6 +187,7 @@
             this.Controls.Add(this.customGridView1);
             this.Name = "Transaccion";
             this.Text = "Transaccion";
+            this.Load += new System.EventHandler(this.Transaccion_Load);
             this.Controls.SetChildIndex(this.customGridView1, 0);
             this.Controls.SetChildIndex(this.newRegistro, 0);
             this.Controls.SetChildIndex(this.panel1, 0);

@@ -11,7 +11,7 @@ namespace BancosINE
     class Funciones
     {
 
-        public static DBConnect dbConnect = new DBConnect("inebancos");
+        public static DBConnect dbConnect = new DBConnect("ine bancos");
 
         public static ArrayList array = new ArrayList();
         public static int currentPage = -1;
@@ -25,10 +25,7 @@ namespace BancosINE
                 "BancosINE.Cuentas"
             },
             new string[]{
-                "BancosINE.movimientos",
-                "",
-                "",
-                "BancosINE.Agenda"
+                "BancosINE.Movimientos.Movimientos_bancarios"
             },
             new string[]{               
                 "BancosINE.Cliente",
