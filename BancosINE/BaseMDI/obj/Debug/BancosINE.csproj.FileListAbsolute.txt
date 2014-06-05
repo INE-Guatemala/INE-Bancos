@@ -46,7 +46,6 @@ C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.exe
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BaseMDI.pdb
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.exe
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\BaseMDI.pdb
-C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\ODBCConnect.pdb
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csprojResolveAssemblyReference.cache
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Acreedor.resources
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.tipoagente.resources
@@ -65,3 +64,4 @@ C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.r
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.csproj.GenerateResource.Cache
 C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\obj\Debug\BancosINE.Movimientos.Movimientos_bancarios.resources
+C:\Users\EdwinOttoniel\Desktop\BancosINE\BaseMDI\bin\Debug\ODBCConnect.dll

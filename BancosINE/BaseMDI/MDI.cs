@@ -28,7 +28,7 @@ namespace BancosINE
             int w = Screen.FromControl(this).WorkingArea.Width;
             int h = Screen.FromControl(this).WorkingArea.Height;
             ReDimensionar(w, h);
-            //openForm(new tipoagente());
+            openForm(new Movimientos.Movimientos_bancarios());
         }
 
         private void ReDimensionar(int w, int h)

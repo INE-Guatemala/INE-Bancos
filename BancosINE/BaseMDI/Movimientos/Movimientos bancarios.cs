@@ -34,7 +34,7 @@ namespace BancosINE.Movimientos
 
         private void Consultar()
         {
-            string query ="select m.idtransaccion as 'No. Transaccion', c.nombre as 'NOMBRE DE CUENTA', tp.nombre as 'TIPO', ";
+            string query ="select m.idmovimiento as 'No. Transaccion', c.nombre as 'NOMBRE DE CUENTA', tp.nombre as 'TIPO', ";
             query += " t.nombre as 'DETALLE MOVIEMIENTO', m.fecha as 'FECHA', m.referencia as 'NO. REFERENCIA', ";
             query+= "m.monto as 'MONTO' from movimiento m, cuenta c, transaccion t, tipo_transaccion tp ";
             query += " where m.idcuenta = c.idcuenta and c.idcuenta =" + comboBox2.SelectedValue.ToString() + " and m.idtransaccion = t.idtransaccion and t.idtipo_transaccion = tp.idtipo_transaccion";
@@ -42,12 +42,9 @@ namespace BancosINE.Movimientos
             dGrid.DataSource = dt;
             dGrid.Columns[0].Visible = false;
                 //Llenado label 9
-            string query2 = "select m.nombre moneda from cuenta c";
-            query2 += " INNER JOIN moneda m ON c.idmoneda";
-            query2 += " where c.idcuenta=" + comboBox2.SelectedValue.ToString();
-            
+            string query2 = "select mo.nombre from moneda mo, cuenta c where c.idmoneda = mo.idmoneda and c.idcuenta="+comboBox2.SelectedValue.ToString();
             Dictionary<string, string> res = Funciones.dbConnect.consultar_un_registro(query2);
-            label9.Text = res["moneda"];   
+            label9.Text = res["nombre"];   
 
             dGrid.CellMouseDown += dataGridView1_CellMouseDown;
             customGridView1.cms.ItemClicked += cms_Click;
@@ -118,9 +115,11 @@ namespace BancosINE.Movimientos
             DialogResult res = MessageBox.Show("¿Seguro que desea eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
-                string tabla = "movimiento";
-                string condicion = "idmovimiento =" + selectIndex.ToString()+ " and idcuenta = "+ comboBox2.SelectedValue.ToString() ;
-                Funciones.dbConnect.eliminar(tabla, condicion);
+                //string tabla = "movimiento";
+               // string condicion = "idmovimiento =" + selectIndex.ToString()+ " and idcuenta = "+ comboBox2.SelectedValue.ToString() ;
+               // Funciones.dbConnect.eliminar(tabla, condicion);
+                string condicion = "DELETE FROM movimiento where idmovimiento = "+ selectIndex.ToString();
+                Funciones.dbConnect.operacion(condicion);
                 Consultar();
                 saldo();
             }
@@ -180,8 +179,13 @@ namespace BancosINE.Movimientos
                     double aoc = Convert.ToDouble(textBox3.Text);
                     string op = "select idtipo_transaccion from transaccion where idtransaccion ="+ comboBox1.SelectedValue.ToString();
                     Dictionary<string, string> res = Funciones.dbConnect.consultar_un_registro(op);
-                    string query4 = "select c.saldo from cuenta  c where c.idcuenta =" + comboBox2.SelectedValue;
+                    string query4 = "select saldo from cuenta where idcuenta =" + comboBox2.SelectedValue;
                     Dictionary<string, string> res2 = Funciones.dbConnect.consultar_un_registro(query4);
+
+                    if (res2["saldo"] == null)
+                    {
+                        res2["saldo"] = "0.0";
+                    }
                     double saldotemp = Convert.ToDouble(res2["saldo"]);
                     double abono = 0;
                     double cargo = 0;
