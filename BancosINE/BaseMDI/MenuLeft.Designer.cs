@@ -35,27 +35,31 @@
             treeNode2});
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Movimientos y transacciones");
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Saldo de cuentas");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Reporte de movimientos");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Operaciones", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Conciliaciones");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Agenda de movimientos");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Cheques");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Operaciones", new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Clientes");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Proveedores");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Acreedores");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Agentes", new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode9,
-            treeNode10});
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Transacción");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Tipos de moneda");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Tipos de cuentas");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Tipos de agente");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Tipos", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13,
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Clientes");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Proveedores");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Acreedores");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Agentes", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11,
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Transacción");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Tipos de moneda");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Tipos de cuentas");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Tipos de agente");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Tipos", new System.Windows.Forms.TreeNode[] {
             treeNode14,
-            treeNode15});
+            treeNode15,
+            treeNode16,
+            treeNode17});
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
@@ -78,32 +82,36 @@
             treeNode5.Name = "Nodo12";
             treeNode5.Text = "Saldo de cuentas";
             treeNode6.Name = "Nodo13";
-            treeNode6.Text = "Reporte de movimientos";
-            treeNode7.Name = "Nodo10";
-            treeNode7.Text = "Operaciones";
-            treeNode8.Name = "Nodo2";
-            treeNode8.Text = "Clientes";
-            treeNode9.Name = "Nodo3";
-            treeNode9.Text = "Proveedores";
-            treeNode10.Name = "Nodo4";
-            treeNode10.Text = "Acreedores";
-            treeNode11.Name = "Nodo0";
-            treeNode11.Text = "Agentes";
-            treeNode12.Name = "Nodo1";
-            treeNode12.Text = "Transacción";
-            treeNode13.Name = "Nodo8";
-            treeNode13.Text = "Tipos de moneda";
-            treeNode14.Name = "Nodo7";
-            treeNode14.Text = "Tipos de cuentas";
-            treeNode15.Name = "Nodo1";
-            treeNode15.Text = "Tipos de agente";
-            treeNode16.Name = "Nodo0";
-            treeNode16.Text = "Tipos";
+            treeNode6.Text = "Conciliaciones";
+            treeNode7.Name = "Nodo1";
+            treeNode7.Text = "Agenda de movimientos";
+            treeNode8.Name = "Nodo0";
+            treeNode8.Text = "Cheques";
+            treeNode9.Name = "Nodo10";
+            treeNode9.Text = "Operaciones";
+            treeNode10.Name = "Nodo2";
+            treeNode10.Text = "Clientes";
+            treeNode11.Name = "Nodo3";
+            treeNode11.Text = "Proveedores";
+            treeNode12.Name = "Nodo4";
+            treeNode12.Text = "Acreedores";
+            treeNode13.Name = "Nodo0";
+            treeNode13.Text = "Agentes";
+            treeNode14.Name = "Nodo1";
+            treeNode14.Text = "Transacción";
+            treeNode15.Name = "Nodo8";
+            treeNode15.Text = "Tipos de moneda";
+            treeNode16.Name = "Nodo7";
+            treeNode16.Text = "Tipos de cuentas";
+            treeNode17.Name = "Nodo1";
+            treeNode17.Text = "Tipos de agente";
+            treeNode18.Name = "Nodo0";
+            treeNode18.Text = "Tipos";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
-            treeNode7,
-            treeNode11,
-            treeNode16});
+            treeNode9,
+            treeNode13,
+            treeNode18});
             this.treeView1.Size = new System.Drawing.Size(300, 600);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);

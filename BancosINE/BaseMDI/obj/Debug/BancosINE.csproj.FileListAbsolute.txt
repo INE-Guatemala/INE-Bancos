@@ -41,3 +41,19 @@ C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debu
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Cliente.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Proveedor.resources
 C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Transacciones.Transaccion.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Agenda.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Estados.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.resx
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.cs
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\bin\Debug\Cuentas bancarias\Estados.designer.cs
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\bin\Debug\numerosaletrascanel.dll
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Cheques.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Movimientos.Movimientos_bancarios.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_de_movimiento.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Reportes_cuentas.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_Clientes.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_cuenta.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Reporte_cuentas.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\BancosINE.Conciliacion.resources
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\RdlCompile.cache
+C:\Users\Guicho\Documents\Visual Studio 2013\Projects\BancosINE\BaseMDI\obj\Debug\RdlCompile.compiled

@@ -32,7 +32,10 @@
             this.PanelContainer = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenuUp = new System.Windows.Forms.Panel();
             this.menuUp1 = new BancosINE.MenuUp();
             this.closeBtnCurrentPage = new System.Windows.Forms.Button();
@@ -40,9 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuLeft1 = new BancosINE.MenuLeft();
-            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelMenuUp.SuspendLayout();
             this.panelPublicitario.SuspendLayout();
@@ -51,6 +53,7 @@
             // 
             // PanelContainer
             // 
+            this.PanelContainer.AutoScroll = true;
             this.PanelContainer.Location = new System.Drawing.Point(300, 76);
             this.PanelContainer.Name = "PanelContainer";
             this.PanelContainer.Size = new System.Drawing.Size(704, 652);
@@ -62,7 +65,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.usuarioToolStripMenuItem});
+            this.usuarioToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -80,6 +84,18 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(91, 32);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar sesión";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -88,6 +104,12 @@
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
             this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(91, 32);
             this.usuarioToolStripMenuItem.Text = "Usuario";
+            // 
+            // perfilToolStripMenuItem
+            // 
+            this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(175, 32);
+            this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // panelMenuUp
             // 
@@ -157,23 +179,20 @@
             this.menuLeft1.Size = new System.Drawing.Size(300, 600);
             this.menuLeft1.TabIndex = 0;
             // 
-            // cerrarSesiónToolStripMenuItem
+            // ayudaToolStripMenuItem
             // 
-            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar sesión";
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirAyudaToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(80, 32);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // salirToolStripMenuItem
+            // abrirAyudaToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
-            this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // perfilToolStripMenuItem
-            // 
-            this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(175, 32);
-            this.perfilToolStripMenuItem.Text = "Perfil";
+            this.abrirAyudaToolStripMenuItem.Name = "abrirAyudaToolStripMenuItem";
+            this.abrirAyudaToolStripMenuItem.Size = new System.Drawing.Size(186, 32);
+            this.abrirAyudaToolStripMenuItem.Text = "Abrir ayuda";
+            this.abrirAyudaToolStripMenuItem.Click += new System.EventHandler(this.abrirAyudaToolStripMenuItem_Click);
             // 
             // MDI
             // 
@@ -218,6 +237,8 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perfilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirAyudaToolStripMenuItem;
     }
 }
 

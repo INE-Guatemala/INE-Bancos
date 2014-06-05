@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,7 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ODBCConnect">
+    <Reference Include="numerosaletrascanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Google Drive\Grupo IS\DLL CANEL\numerosaletrascanel.dll</HintPath>
+    </Reference>
+    <Reference Include="ODBCConnect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -47,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agente\Acreedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,13 @@
     <Compile Include="CustomGridView.Designer.cs">
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ejecutarAgenda.cs" />
+    <Compile Include="Cuentas bancarias\Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas bancarias\Estados.designer.cs">
+      <DependentUpon>Estados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funciones.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -108,6 +127,54 @@
     <Compile Include="MenuUp.Designer.cs">
       <DependentUpon>MenuUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Movimientos\Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\Cheques.designer.cs">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\Movimientos bancarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\Movimientos bancarios.designer.cs">
+      <DependentUpon>Movimientos bancarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\plantilla _reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\plantilla _reporte.designer.cs">
+      <DependentUpon>plantilla _reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte de movimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte de movimiento.designer.cs">
+      <DependentUpon>Reporte de movimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes_cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes_cuentas.designer.cs">
+      <DependentUpon>Reportes_cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte_Clientes.designer.cs">
+      <DependentUpon>Reporte_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte_cuenta.designer.cs">
+      <DependentUpon>Reporte_cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte_cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte_cuentas.designer.cs">
+      <DependentUpon>Reporte_cuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cuentas bancarias\TipoCuentas.cs">
@@ -128,12 +195,24 @@
     <Compile Include="Agente\Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Movimientos\Conciliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\Conciliacion.Designer.cs">
+      <DependentUpon>Conciliacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DataSet1.Designer.cs" />
+    <Compile Include="Reportes\DataSet2.Designer.cs" />
+    <Compile Include="Reportes\DataSet3.Designer.cs" />
     <Compile Include="Transacciones\Transaccion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Transacciones\Transaccion.Designer.cs">
       <DependentUpon>Transaccion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agente\Acreedor.resx">
       <DependentUpon>Acreedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +237,9 @@
     <EmbeddedResource Include="CustomGridView.resx">
       <DependentUpon>CustomGridView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas bancarias\Estados.resx">
+      <DependentUpon>Estados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +251,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUp.resx">
       <DependentUpon>MenuUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\Cheques.resx">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\Movimientos bancarios.resx">
+      <DependentUpon>Movimientos bancarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Report2.rdlc" />
+    <EmbeddedResource Include="Reportes\Report3.rdlc" />
+    <EmbeddedResource Include="Reportes\Reporte de movimiento.resx">
+      <DependentUpon>Reporte de movimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes_cuentas.resx">
+      <DependentUpon>Reportes_cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte_Clientes.resx">
+      <DependentUpon>Reporte_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte_cuenta.resx">
+      <DependentUpon>Reporte_cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte_cuentas.resx">
+      <DependentUpon>Reporte_cuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -182,6 +288,9 @@
     </Compile>
     <EmbeddedResource Include="Agente\Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\Conciliacion.resx">
+      <DependentUpon>Conciliacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transacciones\Transaccion.resx">
       <DependentUpon>Transaccion.cs</DependentUpon>
@@ -200,6 +309,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet1.xsd" />
+    <None Include="Reportes\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet2.xsd" />
+    <None Include="Reportes\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet3.xsd" />
+    <None Include="Reportes\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Resources\accept.png" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +361,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_nube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

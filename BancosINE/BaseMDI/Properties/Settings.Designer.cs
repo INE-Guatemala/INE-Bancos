@@ -22,5 +22,17 @@ namespace BancosINE.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2014-05-02")]
+        public global::System.DateTime agendaActualizada {
+            get {
+                return ((global::System.DateTime)(this["agendaActualizada"]));
+            }
+            set {
+                this["agendaActualizada"] = value;
+            }
+        }
     }
 }

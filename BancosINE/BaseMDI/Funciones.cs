@@ -24,7 +24,13 @@ namespace BancosINE
                 "BancosINE.Bancos",                
                 "BancosINE.Cuentas"
             },
-            new string[]{},
+            new string[]{
+                "BancosINE.Movimientos.Movimientos_bancarios",
+                "BancosINE.Estados",
+                "BancosINE.Conciliacion",
+                "BancosINE.Agenda",
+                "BancosINE.Cheques"
+            },
             new string[]{               
                 "BancosINE.Cliente",
                 "BancosINE.Proveedor",

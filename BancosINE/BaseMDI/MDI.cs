@@ -28,7 +28,8 @@ namespace BancosINE
             int w = Screen.FromControl(this).WorkingArea.Width;
             int h = Screen.FromControl(this).WorkingArea.Height;
             ReDimensionar(w, h);
-            //openForm(new tipoagente());
+            new ejecutarAgenda();
+            openForm(new Agenda());
         }
 
         private void ReDimensionar(int w, int h)
@@ -147,6 +148,12 @@ namespace BancosINE
                 showPage(Funciones.array[Funciones.currentPage].ToString());
             }
             menuUp1.removePage(t);
+        }
+
+        private void abrirAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string ruta = System.IO.Directory.GetCurrentDirectory().ToString();
+            System.Diagnostics.Process.Start(ruta + @"\ayuda.chm");
         }
     }
 }
