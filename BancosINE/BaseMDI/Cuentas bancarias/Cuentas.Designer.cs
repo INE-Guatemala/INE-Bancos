@@ -48,9 +48,10 @@
             // 
             // customGridView1
             // 
-            this.customGridView1.Location = new System.Drawing.Point(18, 53);
+            this.customGridView1.Location = new System.Drawing.Point(19, 53);
+            this.customGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customGridView1.Name = "customGridView1";
-            this.customGridView1.Size = new System.Drawing.Size(994, 397);
+            this.customGridView1.Size = new System.Drawing.Size(988, 398);
             this.customGridView1.TabIndex = 2;
             // 
             // panel1
@@ -68,8 +69,9 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 502);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 253);
+            this.panel1.Size = new System.Drawing.Size(700, 254);
             this.panel1.TabIndex = 6;
             this.panel1.Visible = false;
             // 
@@ -77,6 +79,7 @@
             // 
             this.bancoCmb.FormattingEnabled = true;
             this.bancoCmb.Location = new System.Drawing.Point(131, 102);
+            this.bancoCmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bancoCmb.Name = "bancoCmb";
             this.bancoCmb.Size = new System.Drawing.Size(549, 24);
             this.bancoCmb.TabIndex = 12;
@@ -85,6 +88,7 @@
             // 
             this.cuentaCmb.FormattingEnabled = true;
             this.cuentaCmb.Location = new System.Drawing.Point(131, 138);
+            this.cuentaCmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuentaCmb.Name = "cuentaCmb";
             this.cuentaCmb.Size = new System.Drawing.Size(549, 24);
             this.cuentaCmb.TabIndex = 11;
@@ -93,6 +97,7 @@
             // 
             this.monedaCmb.FormattingEnabled = true;
             this.monedaCmb.Location = new System.Drawing.Point(131, 176);
+            this.monedaCmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.monedaCmb.Name = "monedaCmb";
             this.monedaCmb.Size = new System.Drawing.Size(549, 24);
             this.monedaCmb.TabIndex = 10;
@@ -122,9 +127,10 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.button2.BackgroundImage = global::BancosINE.Properties.Resources.accept;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(594, 210);
+            this.button2.Location = new System.Drawing.Point(595, 210);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
+            this.button2.Size = new System.Drawing.Size(40, 39);
             this.button2.TabIndex = 7;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -135,8 +141,9 @@
             this.button1.BackgroundImage = global::BancosINE.Properties.Resources.remove;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(640, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.Size = new System.Drawing.Size(40, 39);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -144,7 +151,8 @@
             // numeroTxt
             // 
             this.numeroTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numeroTxt.Location = new System.Drawing.Point(131, 61);
+            this.numeroTxt.Location = new System.Drawing.Point(131, 62);
+            this.numeroTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numeroTxt.Name = "numeroTxt";
             this.numeroTxt.Size = new System.Drawing.Size(549, 24);
             this.numeroTxt.TabIndex = 4;
@@ -153,6 +161,7 @@
             // 
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.Location = new System.Drawing.Point(131, 26);
+            this.nombreTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(549, 24);
             this.nombreTxt.TabIndex = 3;
@@ -192,9 +201,10 @@
             this.newRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(38)))));
             this.newRegistro.BackgroundImage = global::BancosINE.Properties.Resources._new;
             this.newRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.newRegistro.Location = new System.Drawing.Point(12, 456);
+            this.newRegistro.Location = new System.Drawing.Point(12, 455);
+            this.newRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.newRegistro.Name = "newRegistro";
-            this.newRegistro.Size = new System.Drawing.Size(40, 40);
+            this.newRegistro.Size = new System.Drawing.Size(40, 39);
             this.newRegistro.TabIndex = 5;
             this.newRegistro.UseVisualStyleBackColor = false;
             this.newRegistro.Click += new System.EventHandler(this.newRegistro_Click);
@@ -203,12 +213,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 768);
+            this.ClientSize = new System.Drawing.Size(1196, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.customGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cuentas";
-            this.Text = "Conciliacion";
+            this.Text = "Cuentas";
             this.Load += new System.EventHandler(this.Cuentas_Load);
             this.Controls.SetChildIndex(this.customGridView1, 0);
             this.Controls.SetChildIndex(this.newRegistro, 0);

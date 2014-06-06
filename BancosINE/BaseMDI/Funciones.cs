@@ -22,22 +22,21 @@ namespace BancosINE
         public static object[] clases = new object[]{
             new string[]{
                 "BancosINE.Bancos",                
-                "BancosINE.Cuentas"
+                "BancosINE.Cuentas",
+                "BancosINE.Conciliaciones"
             },
             new string[]{},
             new string[]{               
                 "BancosINE.Cliente",
                 "BancosINE.Proveedor",
-                "BancosINE.Acreedor"
+                "BancosINE.Acreedor",
+                "BancosINE.Cheques"
             },
             new string[]{
                 "BancosINE.Transacciones.Transaccion",
                 "BancosINE.TipoCuentas",
                 "BancosINE.TipoCuentas",
                 "BancosINE.tipoagente"
-            },
-               new string[]{               
-                "BancosINE.Conciliacion"
             }
         };
     }

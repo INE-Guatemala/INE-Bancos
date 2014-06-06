@@ -32,8 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="numerosaletrascanel">
+      <HintPath>..\..\..\..\..\Visual Studio 2013\Projects\numerosaletrascanel\numerosaletrascanel\bin\Debug\numerosaletrascanel.dll</HintPath>
+    </Reference>
     <Reference Include="ODBCConnect">
-      <HintPath>..\..\..\..\Visual Studio 2010\Projects\ODBCConnect\ODBCConnect\bin\Debug\ODBCConnect.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\ODBCConnect.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,6 +67,18 @@
     </Compile>
     <Compile Include="Agente\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheques.Designer.cs">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliaciones.Designer.cs">
+      <DependentUpon>Conciliaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Cuentas bancarias\Bancos.cs">
       <SubType>Form</SubType>
@@ -128,12 +143,6 @@
     <Compile Include="Agente\Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\Conciliacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\Conciliacion.Designer.cs">
-      <DependentUpon>Conciliacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Transacciones\Transaccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agente\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheques.resx">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conciliaciones.resx">
+      <DependentUpon>Conciliaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas bancarias\Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
@@ -188,9 +203,6 @@
     </Compile>
     <EmbeddedResource Include="Agente\Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Conciliacion.resx">
-      <DependentUpon>Conciliacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transacciones\Transaccion.resx">
       <DependentUpon>Transaccion.cs</DependentUpon>
@@ -241,7 +253,9 @@
   <ItemGroup>
     <None Include="Resources\logo_nube.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
